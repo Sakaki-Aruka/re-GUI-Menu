@@ -1,3 +1,20 @@
+# values description
+# pages; the amount of pages
+# page; page+(int number | start 1)
+# items; the amount of how many the page has
+# slots; how many slots are the page has
+# storageName; storage's displayed name
+#
+# item; item+(int number | start 1)
+#
+# slot: where a slot the item set (int number | start 0)
+# materialName; item id (should write uppercase. example:DIAMOND_AXE)
+# displayName; items displayed name (can use "§")
+# lore; items lore (when want to write more than one lore, should use "," between lore.)
+# amount; the items amount (int number | 1 ~ 64)
+# jump; the page that jumped destination.(does not have target page, should write 0 | the default value is 0)
+#
+# command; this value is an optional parameter.(Click and the command that is written run.)
 
 pages: 2
 
