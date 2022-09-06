@@ -1,0 +1,37 @@
+
+pages: 2
+
+page1:
+
+  items: 2
+  slots: 9
+  storageName: "Storage1"
+
+  item1:
+    slot: 0
+    materialName: "STONE"
+    displayName: "example 1"
+    lore: "this is a stone.,this is a stone.,this is a stone"
+    amount: 1
+
+
+  item2:
+    slot: 1
+    materialName: ""
+    displayName: ""
+    lore: ""
+    amount: 1
+
+page2:
+  items: 1
+  slots: 9
+  storageName: "Storage2"
+
+  item1:
+    slot: 0
+    materialName: ""
+    displayName: ""
+    lore: ""
+    amount: 1
+
+    jump: "page1"
