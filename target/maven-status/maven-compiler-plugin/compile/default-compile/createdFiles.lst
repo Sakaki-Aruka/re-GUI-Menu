@@ -1,4 +1,5 @@
+menuplugin\menuplugin\MenuClick.class
 menuplugin\menuplugin\MenuOpen.class
 menuplugin\menuplugin\MenuPlugin.class
-menuplugin\menuplugin\Events.class
 menuplugin\menuplugin\SettingsLoad.class
+menuplugin\menuplugin\Events.class

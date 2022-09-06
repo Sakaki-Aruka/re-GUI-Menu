@@ -14,13 +14,17 @@ page1:
     lore: "this is a stone.,this is a stone.,this is a stone"
     amount: 1
 
+    jump: 0
+
 
   item2:
     slot: 1
-    materialName: ""
-    displayName: ""
+    materialName: "DIAMOND"
+    displayName: "example 2"
     lore: ""
     amount: 1
+
+    jump: 2
 
 page2:
   items: 1
@@ -29,9 +33,9 @@ page2:
 
   item1:
     slot: 0
-    materialName: ""
-    displayName: ""
+    materialName: "REDSTONE"
+    displayName: "example 3"
     lore: ""
     amount: 1
 
-    jump: "page1"
+    jump: 1
