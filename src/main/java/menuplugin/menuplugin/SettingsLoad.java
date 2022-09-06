@@ -27,6 +27,7 @@ public class SettingsLoad {
     public static Map<String,Integer> playerOpening = new HashMap<>();
     public static Map<String,Integer> interactPageItem = new HashMap<>();
     public static Map<Integer,Inventory> inventoryAndPage = new HashMap<>();
+    public static Map<String,String> slotAndCommand = new HashMap<>();
 
     public void configLoad(){
         pages = FC.getInt("pages");
@@ -40,7 +41,8 @@ public class SettingsLoad {
             for (int item=1;item <= items; item++){
                 String category = "page"+page+".item"+item;
 
-                String key = page+","+FC.getInt(category+".slot");
+                int slot = FC.getInt(category+".slot");
+                String key = page+","+slot;
                 int value = FC.getInt(category+".jump");
                 if(value==0){
                     interactPageItem.put(key,page);
@@ -48,8 +50,15 @@ public class SettingsLoad {
                     interactPageItem.put(key,value);
                 }
 
+                if(FC.contains(category+".command")){
+                    String commandKey = page+","+slot;
+                    String commandValue = FC.getString(category+".command");
+                    slotAndCommand.put(commandKey,commandValue);
+                    //debug
+                    System.out.println(slotAndCommand);
+                }
 
-                int slot = FC.getInt(category+".slot");
+
                 Material material = Material.valueOf(FC.getString(category+".materialName"));
                 String displayName = FC.getString(category+".displayName");
                 ArrayList<String> lore = new ArrayList<>(Arrays.asList(FC.getString(category+".lore").split(",")));

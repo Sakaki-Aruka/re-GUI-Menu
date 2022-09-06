@@ -29,6 +29,11 @@ public class MenuClick {
             playerOpening.put(player.getName(),jumpToPage);
             Inventory inventory = inventoryAndPage.get(jumpToPage);
             player.openInventory(inventory);
+
+            String commandKey = openingPage+","+clickSlot;
+            if(slotAndCommand.containsKey(commandKey)){
+                player.chat(slotAndCommand.get(commandKey));
+            }
         }
 
     }
