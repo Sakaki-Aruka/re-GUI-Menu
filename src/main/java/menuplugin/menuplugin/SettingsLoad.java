@@ -63,7 +63,7 @@ public class SettingsLoad {
 
                 Material material = Material.valueOf(FC.getString(category+".materialName"));
                 String displayName = FC.getString(category+".displayName");
-                ArrayList<String> lore = new ArrayList<>(Arrays.asList(FC.getString(category+".lore").split(",")));
+                ArrayList<String> lore = new ArrayList<>(Arrays.asList(FC.getString(category+".lore").split("!&!")));
                 int amount = FC.getInt(category+".amount");
 
                 ItemStack itemStack = new ItemStack(material);

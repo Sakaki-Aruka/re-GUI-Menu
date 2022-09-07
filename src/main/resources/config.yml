@@ -10,7 +10,7 @@
 # slot: where a slot the item set (int number | start 0)
 # materialName; item id (should write uppercase. example:DIAMOND_AXE)
 # displayName; items displayed name (can use "§")
-# lore; items lore (when want to write more than one lore, should use "," between lore.)
+# lore; items lore (when want to write more than one lore, should use "!&!" between lore.)
 # amount; the items amount (int number | 1 ~ 64)
 # jump; the page that jumped destination.(does not have target page, should write 0 | the default value is 0)
 #
@@ -28,7 +28,7 @@ page1:
     slot: 0
     materialName: "STONE"
     displayName: "example 1"
-    lore: "this is a stone.,this is a stone.,this is a stone"
+    lore: "this is a stone.!&!this is a stone.!&!this is a stone"
     amount: 1
 
     jump: 0
