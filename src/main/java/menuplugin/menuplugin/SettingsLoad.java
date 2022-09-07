@@ -27,7 +27,8 @@ public class SettingsLoad {
     public static Map<String,Integer> playerOpening = new HashMap<>();
     public static Map<String,Integer> interactPageItem = new HashMap<>();
     public static Map<Integer,Inventory> inventoryAndPage = new HashMap<>();
-    public static Map<String,String> slotAndCommand = new HashMap<>();
+    public static Map<String,ArrayList<String>> slotAndCommand = new HashMap<>();
+
 
     public void configLoad(){
         pages = FC.getInt("pages");
@@ -53,7 +54,8 @@ public class SettingsLoad {
                 if(FC.contains(category+".command")){
                     String commandKey = page+","+slot;
                     String commandValue = FC.getString(category+".command");
-                    slotAndCommand.put(commandKey,commandValue);
+                    ArrayList<String> array = new ArrayList<>(Arrays.asList(commandValue.split("!&!")));
+                    slotAndCommand.put(commandKey,array);
                     //debug
                     System.out.println(slotAndCommand);
                 }

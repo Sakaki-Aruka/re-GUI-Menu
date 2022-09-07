@@ -14,7 +14,7 @@
 # amount; the items amount (int number | 1 ~ 64)
 # jump; the page that jumped destination.(does not have target page, should write 0 | the default value is 0)
 #
-# command; this value is an optional parameter.(Click and the command that is written run.)
+# command; this value is an optional parameter. (Click and the command that is written run. | When you want to write more than one commands, you should use "!&!" between commands.)
 
 pages: 2
 
@@ -43,6 +43,7 @@ page1:
     amount: 1
 
     jump: 2
+    command: "/say jumped to page 2!&!/say hello world"
 
 
 page2:
