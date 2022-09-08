@@ -4,3 +4,6 @@ main: menuplugin.menuplugin.MenuPlugin
 api-version: 1.19
 authors: [ SakakiAruka ]
 description: Gui Menu Plugin
+commands:
+  guimenureload:
+    permission: guimenu.op
