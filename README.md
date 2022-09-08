@@ -28,11 +28,11 @@ Set the items displayed name.
 ### lore  
 Set the items lore. If you want to write multiple lines lore, you should write "!&!" between the lore.  
 If you do not need items lore, should write only "".  
-## Parameters that are under this line are optional parameters.  
--> When you do not need, you do not have to write there.
 ### amount  
 Set the items amount in range of 1 to 64.  
 (When you write out of 1 to 64, will be occured bugs.)  
+## Parameters that are under this line are optional.  
+-> When you do not need, you do not have to write there.  
 ### jump
 Set the destination page number.  
 (Destination page is a page of jump to when a player click an item.)  
