@@ -16,7 +16,7 @@ public class MenuOpen {
 
         Player player = event.getPlayer();
 
-        if(event.getAction()==Action.RIGHT_CLICK_AIR || event.getAction()==Action.RIGHT_CLICK_BLOCK && player.getInventory().getItemInMainHand().getType()== Material.STICK){
+        if((event.getAction()==Action.RIGHT_CLICK_AIR || event.getAction()==Action.RIGHT_CLICK_BLOCK) && player.getInventory().getItemInMainHand().getType()== Material.STICK){
             // a player has sticks and right click.
             // a player is opening first inventory page
             playerOpening.put(player.getName(),1);
