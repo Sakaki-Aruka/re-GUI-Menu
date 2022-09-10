@@ -6,6 +6,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
+
 import static menuplugin.menuplugin.SettingsLoad.*;
 
 public final class MenuPlugin extends JavaPlugin implements CommandExecutor {
@@ -39,7 +40,9 @@ public final class MenuPlugin extends JavaPlugin implements CommandExecutor {
             inventoryAndPage.clear();
             slotAndCommand.clear();
 
+            reloadConfig();
             this.load();
+
             sender.sendMessage("§bGUI-Menu plugin has finished updated.");
             return true;
         }else{

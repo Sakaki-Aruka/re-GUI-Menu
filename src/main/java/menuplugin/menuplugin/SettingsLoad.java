@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class SettingsLoad {
 
-    private static FileConfiguration FC;
+    public static FileConfiguration FC;
 
     public void fc(FileConfiguration fileConfiguration){
         FC = fileConfiguration;
