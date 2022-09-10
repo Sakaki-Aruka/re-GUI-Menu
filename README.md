@@ -7,7 +7,10 @@ GUI menu plugin (for Spigot server ; ver 1.19.2~
   
 ## Way to update GUI-pages contents without server reload.
 -> When you want to reload only this plugin, if you have permission "guimenu.op", you can reload this plugins config file.  
--> Reload command is "/guimenureload".  
+-> Reload command is "/guimenureload". 
+## How to update GUI menus?  
+-> Run "/guimenureload" command.  
+(To send this command allowed only for administrators or the limited players who have the permission that is "guimenu.op".)    
 ## Config.yml settings  
 ### pages  
 Set how many pages are there.  
