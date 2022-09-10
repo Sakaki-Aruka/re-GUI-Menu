@@ -33,7 +33,10 @@ public class MenuClick {
             String commandKey = openingPage+","+clickSlot;
             if(slotAndCommand.containsKey(commandKey)){
                 for (String loop : slotAndCommand.get(commandKey)){
-                    player.chat(loop);
+                    if(!(loop.equals(""))){
+                        player.chat(loop);
+                    }
+
                 }
 
             }

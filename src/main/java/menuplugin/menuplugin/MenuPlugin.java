@@ -39,6 +39,7 @@ public final class MenuPlugin extends JavaPlugin implements CommandExecutor {
             interactPageItem.clear();
             inventoryAndPage.clear();
             slotAndCommand.clear();
+            arrayCommand.clear();
 
             reloadConfig();
             this.load();

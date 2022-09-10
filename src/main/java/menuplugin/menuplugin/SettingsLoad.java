@@ -28,6 +28,7 @@ public class SettingsLoad {
     public static Map<String,Integer> interactPageItem = new HashMap<>();
     public static Map<Integer,Inventory> inventoryAndPage = new HashMap<>();
     public static Map<String,ArrayList<String>> slotAndCommand = new HashMap<>();
+    public static ArrayList<String> arrayCommand;
 
 
     public void configLoad(){
@@ -54,8 +55,8 @@ public class SettingsLoad {
                 if(FC.contains(category+".command")){
                     String commandKey = page+","+slot;
                     String commandValue = FC.getString(category+".command");
-                    ArrayList<String> array = new ArrayList<>(Arrays.asList(commandValue.split("!&!")));
-                    slotAndCommand.put(commandKey,array);
+                    arrayCommand = new ArrayList<>(Arrays.asList(commandValue.split("!&!")));
+                    slotAndCommand.put(commandKey,arrayCommand);
                     //debug
                     System.out.println(slotAndCommand);
                 }
