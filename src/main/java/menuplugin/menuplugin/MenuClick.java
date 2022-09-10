@@ -17,6 +17,11 @@ public class MenuClick {
 
         UUID playerUUID = event.getWhoClicked().getUniqueId();
         Player player = Bukkit.getPlayer(playerUUID);
+
+        if(!(event.getInventory().getLocation()==null)){
+            return;
+        }
+
         int openingPage = playerOpening.get(player.getName());
         int clickSlot = event.getRawSlot();
 
@@ -36,11 +41,8 @@ public class MenuClick {
                     if(!(loop.equals(""))){
                         player.chat(loop);
                     }
-
                 }
-
             }
         }
-
     }
 }
