@@ -6,11 +6,13 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
+import java.util.ArrayList;
+
 import static menuplugin.menuplugin.SettingsLoad.inventoryAndPage;
 import static menuplugin.menuplugin.SettingsLoad.playerOpening;
 
 public class MenuOpen {
-
+    public static ArrayList<String> openingPlayers = new ArrayList<>();
 
     public void menuOpen(PlayerInteractEvent event){
 
@@ -21,6 +23,7 @@ public class MenuOpen {
             // a player is opening first inventory page
             playerOpening.put(player.getName(),1);
             player.openInventory(inventoryAndPage.get(1));
+            openingPlayers.add(player.getName());
         }
     }
 }

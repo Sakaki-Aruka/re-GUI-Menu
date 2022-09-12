@@ -8,6 +8,7 @@ import org.bukkit.inventory.Inventory;
 import java.util.Map;
 import java.util.UUID;
 
+import static menuplugin.menuplugin.MenuOpen.openingPlayers;
 import static menuplugin.menuplugin.SettingsLoad.*;
 
 
@@ -18,7 +19,7 @@ public class MenuClick {
         UUID playerUUID = event.getWhoClicked().getUniqueId();
         Player player = Bukkit.getPlayer(playerUUID);
 
-        if(!(event.getInventory().getLocation()==null)){
+        if((!(event.getInventory().getLocation()==null) || (!(openingPlayers.contains(player.getName()))))){
             return;
         }
 
@@ -34,6 +35,7 @@ public class MenuClick {
             playerOpening.put(player.getName(),jumpToPage);
             Inventory inventory = inventoryAndPage.get(jumpToPage);
             player.openInventory(inventory);
+            openingPlayers.add(player.getName());
 
             String commandKey = openingPage+","+clickSlot;
             if(slotAndCommand.containsKey(commandKey)){

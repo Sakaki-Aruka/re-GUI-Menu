@@ -2,4 +2,5 @@ menuplugin\menuplugin\MenuClick.class
 menuplugin\menuplugin\MenuOpen.class
 menuplugin\menuplugin\MenuPlugin.class
 menuplugin\menuplugin\SettingsLoad.class
+menuplugin\menuplugin\MenuClose.class
 menuplugin\menuplugin\Events.class
