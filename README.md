@@ -36,10 +36,8 @@ Set the items amount in range of 1 to 64.
 (When you write out of 1 to 64, will be occured bugs.)  
 ### command  
 Set the command(or chat message) that run when a player click an item.  
-This parameters default value is "". (no work)  
-## Parameters that are under this line are optional.  
--> When you do not need, you do not have to write there.  
+This parameters default value is "". (no work)   
 ### jump
 Set the destination page number.  
-(Destination page is a page of jump to when a player click an item.)  
-
+(Destination page is a page of jump to when a player click an item.)   
+default value is 0.(if set 0 in this parameter, will not jump to anywhere.)
